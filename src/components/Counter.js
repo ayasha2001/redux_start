@@ -7,12 +7,12 @@ const Counter = () => {
   const dispatch = useDispatch();
   const incrementHandler = () => {
     dispatch({
-      type: "IncrementBy2",
+      type: "IncrementBy5",
     });
   };
   const decrementHandler = () => {
     dispatch({
-      type: "DecrementBy2",
+      type: "DecrementBy5",
     });
   };
 
@@ -20,8 +20,8 @@ const Counter = () => {
     <main className={classes.counter}>
       <h1>Redux Counter</h1>
       <div className={classes.value}>{counter}</div>
-      <button onClick={incrementHandler}>IncrementBy2</button>
-      <button onClick={decrementHandler}>DecrementBy2</button>
+      <button onClick={incrementHandler}>IncrementBy5</button>
+      <button onClick={decrementHandler}>DecrementBy5</button>
       <button onClick={toggleCounterHandler}>Toggle Counter</button>
     </main>
   );
